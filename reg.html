@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+<link rel="stylesheet" href="css/iconfont.css"/>    
+<link rel="stylesheet" href="css/common.css"/>
+<link rel="stylesheet" href="css/reg.css"/>
+</head>
+<body>
+    <div class="box">
+<!-- 轮播图 -->
+        <div class="ban-box">
+            <div class="ban">
+                2018-9-11 watching：背景图做轮播图
+            </div>
+        </div>
+<!-- 注册部分 -->
+        <div class="reg-box">
+            <div class="reg">
+    <!-- 顶部 -->
+                <div class="top">
+                    <ul class="uls">
+                        <li>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <img src="img-reg/logo-right.png" />
+                                <span>QQ靓号</span>
+                            </a>
+        <!-- qq靓号外层盒子 -->
+                            <div class="enter-qq-box">
+                                <div class="search">
+                                    <input type="text" 
+                                    placeholder="搜索QQ靓号，如“1996”,“520”"/>
+                                    <a href="#">
+                                        <i class="iconfont icon-fangdajing"></i>
+                                    </a>
+                                </div>
+                                <ul class="keyword">
+                                    <li>
+                                        <a href="#">生日</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">星座</a>
+                                        </li>
+                                    <li>
+                                        <a href="#">爱情</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">手机</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-web__youxiangrenzheng"></i>
+                                邮箱账号</a>
+                        </li>
+                        <li>
+                            <span>简体中文</span>
+                            <ul class="lang-opt"> 
+                                <li>
+                                    <a href="javascript:void(0)">繁體中文</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">English</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">意见反馈</a>
+                        </li>
+                    </ul>
+                </div>
+    <!-- 注册正文 -->
+                <div class="reg-con">
+                    <h1>欢迎注册QQ</h1>
+                    <p>每一天，乐在沟通。
+                        <a href="#">免费靓号</a>
+                    </p>
+                    <ul class="reg-uls">
+        <!-- 昵称 -->
+                        <li class="nickname">
+                            <input type="text" placeholder="昵称" id="nickname" maxlength="24"
+                            name="username"/>
+            <!-- 右侧检测用户名可用否？  -->
+                            <div>
+                                <img src="img-reg/right.png" class="right-pic
+                                nickname-right"/>
+                            </div>
+                            
+                            <div>
+                                <p class="info nickname-null"><img src="img-reg/red.png" class="red-pic"/>昵称不可以为空</p>
+                            </div>
+                            
+                        </li>
+                        <li class="password">
+                            <input type="password" placeholder="密码"
+                            id="password" maxlength="16"
+                            name="password"/>
+        <!-- 显示/隐藏密码 -->
+                           
+                            
+        <!-- 失去焦点错误信息提示 -->
+                            <div class="check-word">
+                                <img src="img-reg/right.png" class="right-pic password-right"/>
+                                <img src="img-reg/eye-close.png" class="eye close"/>
+                                <!-- <img src="img-reg/eye.png" class="eye open"/> -->
+                            </div>
+        <!-- 聚焦提示 -->   
+                            <div>
+                                <p class="info password-null">
+                                    <img src="img-reg/red.png" class="red-pic"/>密码不能为空
+                                </p>
+                                <p class="info
+                                password-length">
+                                    <img src="img-reg/red.png" class="red-pic"/>长度为8-16个字符
+                                </p>
+                                <p class="info
+                                password-nbsp">
+                                    <img src="img-reg/red.png" class="red-pic"/>不能包含空格
+                                </p>
+                                <p class="info password-type">
+                                    <img src="img-reg/red.png" class="red-pic"/>必须包含字母、数字、符号中至少2种
+                                </p>
+                            </div>
+                            <div class="word-tips">
+                                <p class="info word-nbsp">
+                                    <img src="img-reg/green.png" class="red-pic nbsp-pic"/>不能包含空格
+                                </p>
+                                <p class="info word-length">
+                                    <img src="img-reg/info.png" class="red-pic length-pic"/>长度为8-16个字符
+                                </p>
+                                <p class="info word-type">
+                                    <img src="img-reg/info.png" class="red-pic
+                                    word-type"/>必须包含字母、数字、符号中至少2种
+                                </p>
+                            </div>
+                        </li>
+        <!-- phone -->
+                        <li class="phone">
+                            <div class="phone-area">
+                                <input type="text" value="+86" id="area-num"/>
+                                <div class="arrows">
+                                    <img src="img-reg/down.png" class="phone-pic down"/>
+                                    <img src="img-reg/up.png" class="phone-pic up"/>
+                                </div>    
+                                
+                                <input type="text"
+                                placeholder="手机号码"/>
+                            </div>
+                                
+                                
+                            <p>可通过该手机号找回密码</p>
+                        </li>
+        <!--立即注册  -->
+                        <li>
+                            <input type="button" value="立即注册" id="reg"/>
+                        </li>
+                        <li class="check-box-li">
+            <!-- 勾选 qzone-->
+                            <div class="check-box-img qzone">
+                                <img src="img-reg/checkbox_normal.png" class="checkbox check check-qzone"/>
+                                <img src="img-reg/checkbox_checked.png" class="checkbox checked checked-qzone"/>
+                            </div>
+                            <p class="check-box-p qzone-p">
+                                同时开通QQ空间</p>
+                        </li>
+                        <li class="check-box-li">
+                            
+            <!-- 勾选 yes-->
+                            <div class="check-box-img yes">
+                                <img src="img-reg/checkbox_normal.png" class="checkbox check check-yes"/>
+                                <img src="img-reg/checkbox_checked.png" class="checkbox checked checked-yes"/>
+                            </div>
+                            <p class="check-box-p yes-p">我已阅读并同意相关服务条款和隐私政策
+                                <img src="img-reg/down.png" />
+                                <img src="img-reg/up.png" />
+                            </p>
+                        </li>
+                        <li>Copyright © 1998-2018Tencent All Rights Reserved</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/RegExp.js"></script>
+<script src="js/reg.js"></script>
+<script src="js/tophp.js"></script>
+<script>
+    $("#reg").click(function(){
+        clickCheckReg();
+    });
+
+
+    // QQ靓号
+    $(function(){
+        $(".uls>li:first-child").hover(
+            function(){
+                $(".enter-qq-box").css("display", "block");
+                $(".enter-qq-box").click(function(){
+                    return false;
+                });
+            },
+            function(){
+                if($(".search input").is(":focus" )){
+                return;
+                }
+                else{
+                    $(".enter-qq-box").css("display", "none");
+                }
+            }  
+        );
+        $(window).click(function(){
+            $(".enter-qq-box").css("display", "none");
+        });
+    });
+    
+    // 滑过-----------简体中文-----------
+    $(".uls>li:nth-child(3)").mouseenter(function(){
+        $(this).css("color","black");
+        $(".uls").addClass("enter-uls");
+        $(".lang-opt").css("display","block");
+    });
+
+    $(".uls>li:nth-child(3)").mouseleave(function(){
+        $(this).css("color","#999");
+        $(".uls").removeClass("enter-uls");
+        $(".lang-opt").css("display","none");
+    });
+    // 隐藏语言下拉菜单
+    $(".lang-opt").mouseleave(function(){
+        $(".lang-opt").css("display","none");
+    });
+    //滑过邮箱-----------顶部---------------
+    $(".uls>li:nth-child(2)>a").mouseenter(function(){
+        $(this).css("color","black");
+        $(".icon-web__youxiangrenzheng").css("color","black");
+        
+    });
+    $(".uls>li:nth-child(2)>a").mouseleave(function(){
+        $(this).css("color","#999");
+        $(".icon-web__youxiangrenzheng").css("color","#999");
+    });
+    //滑过反馈-----------顶部---------------
+    $(".uls>li:nth-child(4)>a").mouseenter(function(){
+        $(this).css("color","black");
+        
+    });
+    $(".uls>li:nth-child(4)>a").mouseleave(function(){
+        $(this).css("color","#999");
+    });
+</script>

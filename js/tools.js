@@ -1,0 +1,23 @@
+function Nav(obj){
+    this.ulDom=null;
+    this.width=obj.width;
+    this.height=obj.height;
+    this.left=obj.left;
+    this.top=obj.top;
+    this.bgImg=obj.bgImg;
+    this.color=obj.color;
+    this.bgColor=obj.bgColor;
+    this.liDom=null;
+    this.aDom=null;
+    this.createUI=function(){
+        this.liDom=$create("li");
+        this.liDom.style.width=this.width+"px";
+        this.liDom.style.height=this.height+"px";
+        this.liDom.style.left=this.left+"px";
+        this.liDom.style.top=this.top+"px";
+        this.liDom.style.backgroudImage="url("+this.bgImg+")";
+        this.liDom.style.backgroudColor=this.bgColor;
+        this.liDom.style.color=this.color;
+        this.
+    }
+}

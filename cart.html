@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>聚诚品-购物车</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+</head>
+<body>
+<!-- header -->
+    <div class="hd-box">
+        <div class="hd-blank" style="height:165px;">
+        </div>
+        <div class="hd-top">
+            <div class="hd">
+    <!-- 搜索框等 -->
+                <div class="hd-con-box">
+                    <div class="hd-con">
+                        <div class="hd-left">
+                            <a href="#"><img src="img/hd_logo.png"/></a>
+                        </div>
+                        <div class="hd-right">
+                            <input type="text" placeholder="请输入您想要找的宝贝"/>
+                            <a href="javascript:;">立即登录</a>
+                            <a href="#">
+                                <img src="img/top_right_car.png" />购物车<span id="num">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>   
+    <!-- 导航栏 --> 
+                <div class="nav-box">
+                    <div id="nav">
+                        <ul class="uls">
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">首页</a>
+                            </li>
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">奇迹暖暖</a>
+                            </li>
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">我叫白小飞</a>
+                            </li>
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">一人之下</a>
+                            </li>
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">星辰</a>
+                            </li>
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">狐妖小红娘</a>
+                            </li>
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">星辰</a>
+                            </li>
+                        </ul>
+                        <div class="nav-guide-box">
+    <!-- 子导航入口 -->
+                            <div class="nav-guide">
+                                <a href="#">全部商品分类
+                                    <img src="img/arrow_down.png" />
+                                </a> 
+                            </div>
+    <!-- 子导航 -->
+                            <div id="sub_menu">
+                                <ul class="sub_menu_ul">
+                                    <li class="sub_menu_ul_li">
+                                        <a href="http://">
+                                            <img src="img/sub_menu1.png" />
+                                            <p>服饰鞋帽</p>
+                                        </a>
+                                        <ul>  
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">卫衣/外套</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">T恤</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">袜子</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">裤子</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">鞋子</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">帽子</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">服饰配件</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub_menu_ul_li">
+                                        <a href="http://">
+                                            <img src="img/sub_menu2.png" />
+                                            <p>玩具毛线</p>
+                                        </a>
+                                        <ul>     
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">公仔</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">抱枕</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">手办</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">雕塑</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="sub_menu_ul_li">
+                                        <a href="http://">
+                                            <img src="img/sub_menu3.png" />
+                                            <p>数码配件</p>
+                                        </a>
+                                        <ul>  
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">手机壳</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">充电宝</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">鼠标垫/鼠标</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">U盘</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">数据线</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">打火机</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">无线充电器</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub_menu_ul_li">
+                                        <a href="http://">
+                                            <img src="img/sub_menu4.png" />
+                                            <p>生活用品</p>
+                                        </a>
+                                        <ul>  
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">杯子</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">钥匙扣</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">伞</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">眼罩/耳罩</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">美妆个护</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">其他</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub_menu_ul_li">
+                                        <a href="http://">
+                                            <img src="img/sub_menu5.png" />
+                                            <p>箱包收纳</p>
+                                        </a>
+                                        <ul>  
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">双肩包</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">单肩包</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">收纳包</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub_menu_ul_li">
+                                        <a href="http://">
+                                            <img src="img/sub_menu6.png" />
+                                            <p>首饰配饰</p>
+                                        </a>
+                                        <ul>  
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">手链</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">项链</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">挂件</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">戒指</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">其他</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub_menu_ul_li">
+                                        <a href="http://">
+                                            <img src="img/sub_menu7.png" />
+                                            <p>文具图书</p>
+                                        </a>
+                                        <ul>  
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">笔记本</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">胶带/贴纸</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">文件夹</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub_menu_ul_li">
+                                        <a href="http://">
+                                            <img src="img/sub_menu8.png" />
+                                            <p>休闲零食</p>
+                                        </a>
+                                        <ul>  
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">糖/巧克力</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub_menu_ul_li">
+                                        <a href="http://">
+                                            <img src="img/sub_menu9.png" />
+                                            <p>海报艺术</p>
+                                        </a>
+                                        <ul>  
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">画册</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">海报</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub_menu_ul_li">
+                                        <a href="http://">
+                                            <img src="img/sub_menu10.png" />
+                                            <p>其它</p>
+                                        </a>
+                                        <ul>  
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">纪念币</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer">礼盒</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>    
+    <div class="wrap">
+        <div class="mainwrap">
+            <div class="mycart">
+                <!-- 空购物车 -->
+                <div class="cart-empty">
+                    <p class="empty-tip">购物车空空如也，赶紧选购我们的商品吧！<a href="index.html" class="red">【去逛逛】</a></p>
+                </div>
+                <!-- 商品信息 -->
+                <div class="mycart-th clearfix">
+                    <div class="fl sp-1">&nbsp;
+                        <!--<span class="input-check"><i></i></span>-->
+                    </div>
+                    <p class="fl sp-2">&nbsp;
+                        <!--全选-->
+                    </p>
+                    <p class="fl sp-3">
+                        商品信息
+                    </p>
+                    <p class="fl sp-4">
+                        &nbsp;
+                    </p>
+                    <p class="fl sp-5">
+                        单价（元）
+                    </p>
+                    <p class="fl sp-6">
+                        数量
+                    </p>
+                    <p class="fl sp-7">
+                        金额（元）
+                    </p>
+                    <p class="fl sp-8">
+                        操作
+                    </p>
+                </div>
+                <!-- 购物车信息 -->
+                <div class="mycart-pack cartbox">
+                    <div class="mycart-shop">
+                        <span class="input-check cartcheck"><i></i></span>
+                        <p class="mycart-shop-t">腾讯动漫供应商：艾漫</p>
+                        <span class="mycart-shop-coupon coupon-link" style="display: none">领取优惠券</span>
+                        <div class="couponbox"    style="display: none"></div>
+                    </div>
+                    <div class="mycart-list">
+                        <div class="mycart-item">
+                            <div class="mycart-item-tb">
+                                <div class="mycart-item-row cartlist clearfix">
+                                    <div class="fl sp-1">
+                                        <span class="goodscheck input-check"><i></i></span>
+                                    </div>
+                                    <div class="fl sp-2">
+                                        <div class="mycart-item-img">
+                                            <a href="/comicvip/detail.shtml?id=6327" target="_blank"><img src="http://ossweb-img.qq.com/images/zb/x5/uploadImg/goods/201808/20180828100337_27985.jpg" alt="商品名称"></a>
+                                        </div>
+                                    </div>
+                                    <div class="fl sp-3">
+                                        <p class="mycart-item-name">
+                                            <a href="/comicvip/detail.shtml?id=6327">一人之下 Q版人物徽章 冯宝宝款</a>
+                                        </p>
+                                        <div class="mycart-item-tag">1800
+                                            <span data-txt="使用聚豆最高可以抵扣 0.50 元">聚豆抵 0.50 元</span>
+                                            <span data-txt="商品限时降价 2.00 元">限时折扣</span>
+                                        </div>
+                                        </div>
+                                    <div class="fl sp-4">
+                                        <div class="mycart-item-sel disabled">
+                                        </div>
+                                    </div>
+                                    <div class="fl sp-5">
+                                        <p class="mycart-item-per">
+                                            <s>10.00 元</s>8.00 元
+                                        </p>
+                                    </div>
+                                    <div class="fl sp-6">
+                                        <div class="mycart-item-count">
+                                            <span class="num-minus btn_cart_list_buy_min">-</span>
+                                            <input type="text" class="inpt_cart_list_buy_num" value="1"  maxlength="3"/>
+                                            <span class="num-plus btn_cart_list_buy_plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="fl sp-7">
+                                        <p class="mycart-item-price">
+                                            8.00 元
+                                        </p>
+                                    </div>
+                                    <div class="fl sp-8">
+                                        <div class="mycart-item-tg">
+                                            <a class="btn-del" href="javascript:;">删除</a>
+                                            <a class="btn-fav" href="javascript:;">移入收藏夹</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mycart-tb clearfix">
+                    <div class="mycart-tb-tg">
+                        <!--<span class="input-check"><i></i></span>-->
+                        <!--<span>全选</span>-->
+                        <!--<a href="javascript:;">删除选中商品</a>-->
+                        <!--<a href="javascript:;">清除失效商品</a>-->
+                    </div>
+                    <div class="mycart-tb-info" style="margin: 6px 180px 0 0;">
+                        <p>已选商品 <b class="total">0</b> 件&nbsp;&nbsp;总价：<b class="money">0.00 元</b></p>
+                        <p class="b">不含运费和其他优惠</p>
+                    </div>
+                    <a class="mycart-tb-btn" cnt="0">去结算</a>
+                    <!--<a class="mycart-tb-btn disable" href="#">去结算</a>-->
+                </div>
+            <!-- 为你推荐 -->
+            <div class="recomm">
+                <h2 class="recomm-tit">为你推荐</h2>
+                <ul class="recomm-list">
+                    <li>
+                        <div class="recomm-pic">
+                            <a href="javascript:;">
+                                <img src="img-cart/tj3.jpg" />
+                            </a>
+                        </div>
+                        <div class="recomm-txt">
+                            <p>一人之下 Q版人物徽章 冯宝宝款</p>
+                            <b>8.00 元</b>
+                            <s>10.00 元</s>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="recomm-pic">
+                            <a href="javascript:;">
+                                <img src="img-cart/tj1.jpg" />
+                            </a>
+                        </div>
+                        <div class="recomm-txt">
+                            <p>一人之下 Q版人物徽章 冯宝宝款</p>
+                            <b>8.00 元</b>
+                            <s>10.00 元</s>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="recomm-pic">
+                            <a href="javascript:;">
+                                <img src="img-cart/tj2.jpg" />
+                            </a>
+                        </div>
+                        <div class="recomm-txt">
+                            <p>一人之下 Q版人物徽章 冯宝宝款</p>
+                            <b>8.00 元</b>
+                            <s>10.00 元</s>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="recomm-pic">
+                            <a href="javascript:;">
+                                <img src="img-cart/tj4.jpg" />
+                            </a>
+                        </div>
+                        <div class="recomm-txt">
+                            <p>一人之下 Q版人物徽章 冯宝宝款</p>
+                            <b>8.00 元</b>
+                            <s>10.00 元</s>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="recomm-pic">
+                            <a href="javascript:;">
+                                <img src="img-cart/tj5.jpg" />
+                            </a>
+                        </div>
+                        <div class="recomm-txt">
+                            <p>一人之下 Q版人物徽章 冯宝宝款</p>
+                            <b>8.00 元</b>
+                            <s>10.00 元</s>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>       
+<!-- footer -->
+    <div class="ft_box">
+        <div class="ft">
+            <div class="ft_left">
+                <a href="#"><img src="img/ft_djc_logo.png" /></a>
+                <ul class="ft_left_ul">
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">购物指南</a>
+                    </li>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">配送方式</a>
+                    </li>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">常见操作</a>
+                    </li>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">售后服务</a>
+                    </li>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="ft_right">
+                <li><img src="img/ft_jcp_gzh.jpg" /><p>聚诚品公众号</p></li>
+                <li><img src="img/ft_djc_gzh.jpg" /><p>道聚城公众号</p></li>
+                <li><img src="img/ft_djc_app.png" /><p>掌上道聚城</p></li>  
+            </ul>
+        </div>
+    <!-- CopyRight -->
+        <div class="CopyRight">
+            <p class="ft_link">
+                <a href="http://" target="_blank" rel="noopener noreferrer">腾讯互动娱乐</a> |
+                <a href="http://" target="_blank" rel="noopener noreferrer">服务条款</a> |
+                <a href="http://" target="_blank" rel="noopener noreferrer">广告服务</a> |
+                <a href="http://" target="_blank" rel="noopener noreferrer">腾讯游戏招聘</a> |
+                <a href="http://" target="_blank" rel="noopener noreferrer">腾讯游戏客服</a> |
+                <a href="http://" target="_blank" rel="noopener noreferrer">游戏地图</a> |
+                <a href="http://" target="_blank" rel="noopener noreferrer">成长守护平台</a> |
+                <a href="http://" target="_blank" rel="noopener noreferrer">商务合作</a> |
+                <a href="http://" target="_blank" rel="noopener noreferrer">网站导航</a> |
+            </p>
+            <p class="c">COPYRIGHT &copy; 1998 – 2018 TENCENT. ALL RIGHTS RESERVED.</p>
+            <p><a href="#">腾讯公司 版权所有</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+$(document).ready(function(){
+    
+$(".nav-guide").mouseenter(function(){
+        $(".nav-guide>img").attr("src","img/arrow_up.png");
+        $("#sub_menu").css("display","block");
+    });
+$(".nav-box").mouseleave(function(){
+    $(".nav-guide>img").attr("src","img/arrow_down.png");
+    $("#sub_menu").css("display","none");
+});
+    //滑动导航栏
+    $(window).scroll(function(){
+        var scroH = $(this).scrollTop();
+        var winH = $(this).height();
+        if(scroH>=winH){
+            $(".hd-top").addClass("hd-top-fixed");
+            $(".hd-con").addClass("hd-con-fixed");
+            $(".hd-left>a>img").css({
+                width: 86,height: 42
+            });
+            $(".hd-left").addClass("hd-left-fixed");
+            $(".uls").addClass("uls-fixed");
+            $(".nav-guide").addClass("nav-guide-fixed");
+            
+        }else if(scroH<winH){
+            $(".hd-top").removeClass("hd-top-fixed");
+            $(".hd-con").removeClass("hd-con-fixed");
+            $(".hd-left>a>img").css({
+                width: 128,height: 60
+            });
+            $(".hd-left").removeClass("hd-left-fixed");
+            $(".uls").removeClass("uls-fixed");
+            $(".nav-guide").removeClass("nav-guide-fixed");
+        }
+    })
+    // 购物车选择
+    $(function(){
+        let price=parseFloat($(".mycart-item-price").html());
+        $(".num-minus,.num-plus").bind("selectstart",function(){return false;});    // 屏蔽选择文本
+
+        // -
+        $(".num-minus").click(function(){
+            let num=parseInt($(".inpt_cart_list_buy_num").val());
+            num--;
+            if(num<1){
+                num=1;
+            }
+            $(".inpt_cart_list_buy_num").val(num);
+            
+            // 小计
+            $(".mycart-item-price").html((num*price).toFixed(2)+" 元");
+
+            // 如果选中物品点击-改变总价
+            if($(".input-check i").is(":visible")){
+                $(".total").text(num);
+                $(".money").text((num*price).toFixed(2)+"元");
+            }
+        });
+        
+        // +
+        $(".num-plus").click(function(){
+            let num=parseInt($(".inpt_cart_list_buy_num").val());
+            num++;
+            $(".inpt_cart_list_buy_num").val(num);
+            // 小计
+            $(".mycart-item-price").html((num*price).toFixed(2)+" 元");
+
+            // 如果选中物品点击+改变总价
+            if($(".input-check i").is(":visible")){
+                $(".total").text(num);
+                $(".money").text((num*price).toFixed(2)+"元");
+            }
+            
+        });
+
+        // 输入改变价格
+        $(".inpt_cart_list_buy_num").keyup(function(){
+            let inputNum=$(".inpt_cart_list_buy_num").val();
+            if(inputNum<1){
+                inputNum=1;
+            }
+            $(".inpt_cart_list_buy_num").val(inputNum);
+            
+            // 小计
+            $(".mycart-item-price").html((inputNum*price).toFixed(2)+" 元");
+
+            // 如果选中物品输入改变总价
+            if($(".input-check i").is(":visible")){
+                $(".total").text(inputNum);
+                $(".money").text((inputNum*price).toFixed(2)+"元");
+            }
+        });
+
+        // 选中时改变价格
+        function checked(){
+            let curNum=parseInt($(".inpt_cart_list_buy_num").val());
+
+            $(".input-check").css({
+                "background": "#ec5245",
+                "border-color": "#ec5245"
+            });
+            $(".input-check i").css("display","block");
+
+            // 选中改变合计金额
+
+            
+                $(".total").text(curNum);
+                $(".money").text((curNum*price).toFixed(2)+"元");
+                
+        }
+        // 选中物品
+        $(".goodscheck").toggle(
+           checked,
+            function(){
+                $(".input-check").css({
+                    "background": "#fafafa",
+                    "border-color": "#ddd"
+                });
+                $(".input-check i").css("display","none");
+
+                // 取消改变合计金额
+                $(".total").text(0);
+                $(".money").text((0).toFixed(2)+"元");
+            }
+        );
+
+        // 点击删除按钮
+        $(".btn-del").click(function(){
+            $(".mycart-item").remove();
+            $(".mycart-shop").remove();
+        });
+    });
+    
+});
+  
+</script>

@@ -1,0 +1,806 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    background-color: #f5f5f5;
+    font-family: "Microsoft YaHei";
+}
+/* header */
+.hd-box{
+    width: 100%;
+    background: #0e0e0f;
+}
+.hd-blank{width: 100%;position: relative;}
+
+.hd-top{
+    height: 165px;
+    z-index: 100;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+.hd{
+    background: #0e0e0f;
+}
+.hd-top-fixed{
+    /* display: none; */
+    height: 115px;
+    position: fixed;
+    left: 0;top: 0px;
+    background: #0e0e0f;
+    animation: mymove .5s forwards;
+    -webkit-animation:mymove .5s forwards;
+}
+@-webkit-keyframes mymove{from {top:-115px;}to {top:0px;}}
+@keyframes mymove{from {top:-115px;}to {top:0px;}}
+
+/* 搜索框等 */
+
+.hd-con{
+    width: 1282px; 
+    margin: 0 auto;
+    height: 100px;
+    line-height: 100px;
+}
+.hd-con-fixed{
+    height: 66px;
+    line-height: 66px;
+}
+.hd-left{
+    width: 350px;
+    float: left;
+    background: url(../img-details/logo-cartoon.png) no-repeat;
+    background-size: 128px 74px;
+    background-position: 200px 8px;
+}
+.hd-left-fixed{
+    background-size: 86px 52px;
+    background-position: 156px 6px;
+}
+.hd-left>a>img{
+    width: 128px;
+    height: 60px;
+    vertical-align: middle;
+    margin: 0px 12px; 
+}
+
+.hd-right{
+    float: right;
+}
+.hd-right input{
+    margin-right: 62px;
+    width: 240px;
+    height: 40px;
+    background:#242424;
+    border-radius: 18px;
+    border: 0px;
+    outline: none;
+    line-height: 40px;
+    text-indent: 32px;
+    font-size: 16px;
+    color:#919191;
+    background:#242424 url(../img/search.png) no-repeat left center;
+    background-position: 10px;
+}  
+input::-webkit-input-placeholder {
+    font-family: "Microsoft YaHei";
+    color: #757575; 
+    font-size: 16px;
+} 
+.hd-right a{
+    color: white;
+    font-size: 16px;
+}
+.hd-right a img{
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.hd-right a span{
+    display: inline-block;
+    height: 25px;width: 25px;
+    border-radius: 50%;
+    background: #ffc933;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+    color: black;
+    margin-left: 10px;
+}
+/* 导航栏 */
+.nav-box{
+    position: relative;
+    width: 100%;
+    background: #0e0e0f;
+    border-top: 1px solid #222; 
+}
+#nav{
+    width: 1282px; 
+    margin: 0 auto;
+    overflow: hidden;
+}
+.uls{float: left;}
+.uls li{
+    float: left;
+    text-align: center;
+}
+.uls li a{
+    display: inline-block;
+    line-height: 64px;
+    height: 64px;width: 150px;
+    font-size: 18px;
+    color: #a6a6a6;
+}
+.uls-fixed li a{
+    line-height: 48px;
+    height: 48px;
+    font-size: 14px;
+}
+.uls li:first-child a{
+    color:white;
+    background: url(../img/libg.png) no-repeat;
+    background-size: 150px 64px;
+}
+.uls-fixed li:first-child a{
+    color:white;
+    background: url(../img/libg.png) no-repeat;
+    background-size: 150px 48px;
+}
+
+.uls li a:hover{
+    color:white;
+    background: url(../img/libg.png) no-repeat;
+    background-size: 150px 64px;
+}
+.uls-fixed li a:hover{
+    color:white;
+    background: url(../img/libg.png) no-repeat;
+    background-size: 150px 48px;
+}
+/* 全部商品分类 */
+.nav-guide-box{
+    float: right;
+}
+.nav-guide a{
+    font-size: 16px;
+    line-height: 64px;
+    color: white;
+}
+.nav-guide img{
+    margin-left: 10px;
+}
+.nav-guide-fixed a{
+    font-size: 14px;
+    line-height: 48px;
+}
+#sub_menu{
+    display: none;
+    width: 100%;
+    height: auto;
+    background: white;
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.sub_menu_ul{
+    overflow: hidden;
+    display: table;
+    margin: 0 auto;
+}
+.sub_menu_ul_li{
+    margin:0 10px;
+    float: left;
+    width: 80px;
+    text-align: center;
+}
+.sub_menu_ul_li a p{
+    display: block;width: 80px;
+    font-size: 16px;line-height: 16px;
+    color: #333;
+    border-bottom: 4px solid #e3e3e3;
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+.sub_menu_ul_li a img{
+    margin-top: 28px;margin-bottom: 20px;
+    width: 32px;height: 32px;
+}
+.sub_menu_ul_li ul{
+    padding: 15px 0;
+}
+.sub_menu_ul_li ul li a{
+    color: #333;
+    font-size: 14px;line-height: 30px;
+}
+.sub_menu_ul_li ul li a:hover{
+    text-decoration: underline;
+}
+/* 首页/分类 */
+.tit-box{
+    width: 100%;
+}
+.tit{
+    margin: 0 auto;
+    width: 1282px;
+    /* height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #999; */
+}
+.tit p{
+    height: 28px;
+    line-height: 28px;
+    margin: 20px 0 40px;
+    /* color: #333; */
+    font: 18px/26px 'Microsoft Yahei';
+}
+.tit p a{
+    margin-right: 2px;
+    color: #828282;
+}
+.tit p span{
+    margin-left: 4px;
+    color: #3a3f4a;
+}
+
+/* 商品信息 */
+.goods-box{
+}
+.goods:after{
+    content: ""; display: block; clear: both; height: 0;overflow: hidden;visibility: hidden;
+}
+.goods{
+    z-index: 9;
+    background: white;
+    /* background: wheat; */
+    border-radius: 9px;
+    width: 1232px;
+    height: auto;
+    margin: 0 auto;
+    padding-left:50px;
+    /* padding-right:50px;  */
+    padding-bottom: 50px;
+}
+/* 放大镜 */
+.goods-imgs{
+    float: left;
+    width: 460px;
+    height: 440px;
+    background: white;
+    padding: 30px 0 35px;
+    margin-right: 40px;
+    
+}
+.show-bigpic{
+    width: 458px;
+    height: 438px;
+}
+#zoom{
+    border: 1px solid #f2f2f2;
+    position:relative;
+    width: 458px;
+    height: 438px;
+    background-image:url(../img-details/timo1.jpg);
+    background-size:458px 438px;
+}
+.show-bigpic li a{
+    width: auto;
+    height: auto;
+}
+.show-bigpic li a img{
+    display: block;
+    width: 458px;
+    height: 438px;
+    border: 1px solid #f2f2f2;
+}
+.show-smallpic{
+    margin-top: 20px;
+    width: 540px;
+    height: 100px;
+    /* background: wheat; */
+}
+.show-smallpic li{
+    float: left;
+    width: 78px;
+    height: 74px;
+    margin-right: 10px;
+    border: 1px solid #f2f2f2;
+}
+.show-smallpic li:nth-of-type(1){
+    border-color: #e54538;
+}
+.show-smallpic li:nth-of-type(1) a{
+    border-color: #e54538;
+}
+.show-smallpic li:hover{
+    border-color: #e54538;
+}
+.show-smallpic li a:hover{
+    border-color: #e54538;
+}
+.show-smallpic li a{
+    outline: 0px;
+    display: inline-block;
+    width: 74px;
+    height: 70px;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+.show-smallpic li a img{
+    width: 74px;
+    height: 70px;
+    display: block;
+}
+/* 购物车信息 */
+.goods-info{
+    float: left;
+    width: 700px;
+    padding: 30px 0 35px;
+    
+}    
+.goods-info h3{
+    line-height: 30px;
+    font-size: 28px;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 100;
+}
+.price{
+    margin: 20px 0 15px;
+    background: white;
+}
+.price span:nth-of-type(1){
+    font-size: 36px;
+    color: #f74f4a;
+}
+.price span:nth-of-type(2){
+    padding-left: 5px;
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #999;
+}
+.discounts{
+    margin: 10px 0 15px;
+    height: 16px;
+    font-size: 14px;
+    color: #cc6600;
+    line-height: 16px;
+}
+.discounts em{
+    font-style: normal;
+}
+.discounts em:nth-of-type(1){
+    margin-right: 20px;
+}
+.discounts em:nth-of-type(1):before{
+    content: "";
+    height: 18px;width: 18px;display: inline-block;
+    background: url(../img-details/ico-detail.png) no-repeat;
+    background-position: -44px -2px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+.discounts em:nth-of-type(2)::before{
+    content: "";
+    height: 18px;width: 18px;display: inline-block;
+    background: url(../img-details/ico-detail.png) no-repeat;
+    background-position: -228px -2px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+.discounts em span{
+    color: red;
+}
+/* .:after{
+    content: ""; display: block; clear: both; height: 0;overflow: hidden;visibility: hidden;
+} */
+/* 出售详情 */
+.sale-detail-box{
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px dashed #eee;
+    border-bottom: 1px dashed #eee;
+    font-size: 14px;
+}
+.sale-detail{
+   float: left; 
+}
+/* 已售 */
+.detail-left{
+    color: #999;
+    width: 300px;
+}
+.detail-left span{
+    color: #333;
+}
+/* 累计评价 */
+.detail-mid{
+    color: #999;
+    width: 248px;
+}
+.detail-mid span{
+    color: #333;
+}
+.detail-right{
+    float: right;
+    font-size: 20px;
+    color: #ffd92c;
+    /* width: 142px; */
+}
+.detail-right i{
+    margin: -4px 6px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 111px;
+    height: 18px;
+    background: url(../img-details/ico-detail.png) no-repeat;
+    background-position: -115px -104px;
+}
+.detail-right span{
+    
+}
+/* 同款 */
+.same{
+    overflow: hidden;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+}
+.same label{
+    float: left;
+    color: #888;
+    padding-top: 5px;
+    margin:20px;
+    margin-left: 0px;
+}
+.same-pic-ul{
+    width: 660px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.same-pic-ul li{
+    float: left;
+    margin: 0 0 10px 9px;
+    border: 1px solid #ddd;
+    color: #333;
+    text-align: center;
+    line-height: 14px;
+    cursor: pointer;
+}
+.same-pic-ul .cur{
+    border-color: #e54538;
+}
+.same-pic-ul .cur a img {
+    border-color: #e54538;
+}
+.same-pic-ul li a img{
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #fff;
+}
+/* 数量 */
+.count-box{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    line-height: 30px;
+}
+/* .count-box:after{
+    content: ""; display: block; clear: both; height: 0;overflow: hidden;visibility: hidden;
+} */
+.count-box label{
+    float: left;
+    /* padding-top: 10px; */
+    color: #888;
+    line-height: 36px;
+}
+.count{
+    float: left;
+    margin-left: 20px;
+}
+.count input:nth-of-type(1){
+    outline: none;
+    cursor: text;
+}
+.count a{
+    color: rgb(34, 33, 33);
+    color: black;
+    text-align: center;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 100;
+    float: left;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+}
+
+.count input{
+    float: left;
+    width: 58px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    line-height: 34px;
+    color: rgb(34, 33, 33);
+    display: block;
+    font-size: 14px;
+    cursor: default;
+}
+.click-box span{
+    font-size: 14px;
+    color: #5e6360;
+    padding-left: 10px;
+    line-height: 34px;
+}
+/* 加入购买 */
+.click-box{
+    overflow: hidden;
+    margin-top: 25px;
+}
+.click{
+    float: left;
+    background: #ec5245;
+    width: 200px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    opacity: 1;
+}
+.click:hover{
+
+}
+.buy{
+    margin-left: 30px;
+}
+.collect{
+    float: left;
+    margin: 12px 0 0 30px;
+    width: 84px;
+    height: 28px;
+    line-height: 28px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #888;
+    position: relative;
+    text-indent: 16px;
+}
+.collect i{
+    position: absolute;
+    top: 7px;
+    left: 14px;
+    z-index: 2;
+    width: 16px;
+    height: 14px;
+    background-position: -107px -2px;
+    background: url(../img-details/ico-detail.png) no-repeat;
+    font-style: normal;
+    
+}
+.collect span{
+    line-height: 28px;
+    font-size: 14px;
+    color: #888;
+    text-indent: 16px;
+    text-align: center;
+}
+/* 商品详情 */
+.detail-info-box{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.detail-info{
+    width: 1282px;
+    margin: 0 auto;
+    height: auto;
+    background: #fff;
+}
+.detail-tit{
+    margin: 0 auto 20px;
+    width: 1220px;
+    height: 71px;
+    border-bottom: 1px solid #eee;
+}
+.detail-tit ul{
+    margin: 0 auto;
+    width: 705px;
+}
+.detail-tit ul li{
+    float: left;
+    width: 235px;
+    height: 71px;
+    line-height: 71px;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.tab-line{
+    display: block;
+    background: #ec5245;
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -20px;
+}
+.tab-detail-box{
+}
+
+.tab-detail{
+
+    font-size: 14px;
+    color: #777;
+    margin-left: 44px;
+    height: 40px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.tab-detail ul li{
+    float: left;
+    width: 300px;
+    margin-bottom: 6px;
+}
+.tab-pic-detail{
+    /* display: none; */
+    height: auto;
+    text-align: left;
+    padding-bottom: 100px;
+    margin-top: 40px;
+}
+.tab-pic-detail p img{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+/* 用户评价 */
+.comment{
+    display: none;
+    padding-top: 30px;
+    padding-bottom: 98px;
+    margin: 35px auto 18px;
+    width: 336px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 18px;
+    color: #333;
+}
+.fl{
+    float: left;
+}
+.all-start{
+    width: auto;
+    height: 24px;
+}
+.ico-star{
+    margin: -5px 10px 0 5px;
+    width: 148px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img-details/ico-detail.png) no-repeat;
+    background-position: -156px -152px;
+    font-style: normal;
+}
+.all-point{
+    font-size: 28px;
+    color: #ffca11;
+}
+/* footer */
+.ft_box{
+    margin-top:10px;
+    background: #1b1b1b;
+}
+.ft{
+    overflow: hidden;
+    width: 1282px;
+    margin: 0px auto;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.ft_left{
+    float: left;
+}
+.ft_left:first-child img{
+    margin-left: 80px;
+    margin-right: 50px;
+}
+.ft_left_ul{
+    float: right;
+    height: 135px;
+    width: 395px;
+    margin-left: 10px;
+    border-left: 1px solid #606060;
+    border-right: 1px solid #606060;
+}
+.ft_left_ul li{
+    float: left;
+    width: 118px;
+    height: 55px;
+    padding-left:  50px;
+    padding-right:  26px;
+}
+.ft_left_ul li a:hover{
+    color: white;
+}
+.ft_left_ul li a{
+    color: #a8a8a8;
+    font-size:14px;
+    line-height:24px;
+}
+.ft_left a img{
+    width: 186px;
+    height: 56px;
+}
+.ft_right{
+    float: right;
+}
+.ft_right li{
+    float: left;
+    text-align: center;
+    margin-left: 90px;
+}
+.ft_right li:first-child{
+    margin-left:78px ;
+}
+.ft_right li p{
+    font-size: 16px;
+    color: white;
+}
+.ft_right li img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.CopyRight{
+    width: 1282px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 36px;
+    padding-bottom: 30px;
+    border-top: 1px solid #606060;
+}
+
+.ft_link{
+    color: #777;
+}
+.ft_link a{
+    font-size: 12px;
+    line-height: 24px;
+    color: #777;
+}
+.ft_link a:hover{
+    color: white;
+}
+.c{
+    font-size: 12px;
+    line-height: 24px;
+    color: #777; 
+}
+.CopyRight:last-child a{
+    font-size: 12px;
+    line-height: 24px;
+    color: #777;
+}
+.CopyRight:last-child a:hover{
+    color: white;
+}
